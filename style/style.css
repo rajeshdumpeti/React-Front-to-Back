@@ -1,3 +1,4 @@
+/* Search Bar */
 .search-bar {
     margin: 20px;
     text-align: center;
@@ -5,8 +6,20 @@
 
 .search-bar input {
     width: 75%;
+    text-align: left;
+    border-radius: 6rem;
+    border: 1px solid rgb(160, 160, 160);
+    padding: .6rem 2rem .6rem 1rem;
+    transition: .5s;
 }
 
+.search-bar input:hover {
+    outline: none;
+    border-color: #744cbc;
+    transition: .5s;
+ }
+
+/* Video Details */
 .video-item img {
     max-width: 64px;
 }
@@ -16,12 +29,57 @@
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    bottom: 5px;
+}
+.nopadding {
+    padding-left: 0 !important;
+    margin-bottom: 10px;
 }
 
+/* Videos List */
 .list-group-item {
     cursor: pointer;
+    margin-bottom: 8px !important;
+    border: 0 !important;
 }
 
 .list-group-item:hover {
-    background-color: #eee;
+    box-shadow: 0 1px 12px 0 #adadad;
+}
+
+/* Header */
+.header {
+    padding: 2rem 2rem;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.Header-text_size {
+    color: #744cbc;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1em;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.Header-text_size:hover {
+    color: #744cbc;
+   
+}
+
+.title {
+    color:#744cbc;
+}
+
+/* Media Queries for Header Medium Screens*/
+@media screen and (max-width: 992px) {
+
+}
+
+/* Media Queries for Header Small Screens*/
+@media screen and (max-width: 600px) {
+    header h4 {
+        display: none;
+     }
 }
